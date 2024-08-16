@@ -1,4 +1,6 @@
 output "out" {
-  value       = github_repository_collaborator.collaborator
+  value = {
+    collaborator = github_repository_collaborator.collaborator
+  }
   description = "The collaborator object `github_repository_collaborator`."
 }
